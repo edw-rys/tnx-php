@@ -1,0 +1,28 @@
+
+._window_404{
+    width: 90%;
+    .picture_{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .p_404{
+        font-size: 2em;
+    }
+    .pagenotfound{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 750px) {
+    ._window_404{
+      width: 50%;
+      .p_404{
+          font-size: 5em;
+      }
+      .pagenotfound{
+          font-size: 1.5em;
+      }
+    }
+}

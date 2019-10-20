@@ -1,0 +1,128 @@
+
+.navbar-tnx{
+    z-index: 1100;
+    width: 100%;
+    position: fixed;
+    --bck-panel:#343A40;
+    background: var(--bck-panel);
+    .nav_head{
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+ 
+        .btn-nav-toggler{
+            // btn toggler
+            font-size: 1.3em;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+    .items-nav{
+        height: 0;
+        overflow: hidden;
+        align-self: flex-end;
+        .list-items-nav{
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            width: 100%;
+            .item-nav{
+                width: 100%;
+                
+                .dir-item{
+                    color: var(--color-txt);
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                    padding: 0.7em;
+                    box-sizing: border-box;
+                }
+            }
+            .head-sub-menu{
+                padding: 1em;
+                display: block;
+                text-align: center;
+                // font-size: 1.2em;
+            }
+        }
+        .options-nav{
+            height: 0;
+            overflow: hidden;
+            .option-nav{
+                .op-nav{
+                    color: var(--color-txt);
+                    display: block;
+                    padding: 0.7em;
+                    box-sizing: border-box;  
+                    text-align: center;            
+                }
+            }
+            &.active{
+                height: auto;
+            }
+        }
+        &.active{
+            height: auto;
+        }
+    }
+    .line-nav-separator{
+        width: 100%;
+        background: #fff;
+        height: 1px;
+    }
+}
+@media(min-width:750px){
+
+    .navbar-tnx{
+        display: flex;
+        .nav_head{
+            .nav-iso{
+                
+            }
+            .btn-nav-toggler{
+                // btn toggler
+                display: none;
+            }
+        }
+        .items-nav{
+            overflow: initial;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            .list-items-nav{
+                width: auto;
+                flex-direction: row;
+                .item-nav{
+                    position: relative;
+                    width: auto;
+                    overflow: initial;
+                    // display: flex;
+                    // align-self: center;
+                }
+                .head-sub-menu{
+                    margin-right: 40px;
+                }
+            }
+            .line-nav-separator{
+                display: none;
+            }
+        }
+        .line-nav-separator{
+            width: 100%;
+            background: #fff;
+            height: 1px;
+        }
+    }
+    .drop-down-nav{
+        position: absolute;
+        width: 200px;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid var(--bck-panel);
+        right: 5px;
+        --color-txt: #000;
+    }
+}

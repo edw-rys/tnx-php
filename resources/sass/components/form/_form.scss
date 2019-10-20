@@ -1,0 +1,120 @@
+.form-clasic{
+  // width: 100%;
+  .title{
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #cfd8dc;
+    line-height: 35px;
+  }
+  .header_{
+      background: lighten($color-first,10%);
+      position: relative;
+      // height: 100px;
+      width: 100%;
+      margin-bottom: 30px;
+      .cont-lock{
+        width: 100%;
+        height: 65px;
+        position: relative;
+      }
+      .bottom-head{
+        position: relative;
+        background: var(--color-first);
+        // height: 35px;
+        &::after{
+          content: '';
+          width: 0px;
+          height: 0px;
+          display: block;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-bottom: 7px solid white;
+          border-right: 7px solid rgba(0,0,0,0);
+          border-left: 7px solid rgba(0,0,0,0);
+          border-top: 7px solid rgba(0,0,0,0);
+      }
+    }
+  }  
+  .footer_{
+    width: 100%;
+    height: 50px;
+    background: var(--color-second);
+    // position: absolute;
+    // bottom: 0;
+    .text{
+      color: #cfd8dc;
+      .sign-up{
+        color: white;
+        cursor: pointer;
+        &:hover{
+           color: #b2dfdb; 
+        }
+      }
+    }
+  }
+}
+.separe-grid-2col{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media(min-width:750px){
+    grid-template-columns: 2fr 3fr
+  }
+}
+.panel-inf{
+  &-3col{
+   display: grid;
+   grid-template-rows: auto;
+   grid-gap: 2px;
+   @media(min-width:750px) {
+     grid-gap: 10px;
+     height: 40px;
+    grid-template-columns: repeat(3,1fr); 
+   }
+  }
+}
+.separe{
+  a{
+    display: block;
+    width: 100%;
+    --color-txt:#565656;
+    border-radius: 10px;
+    padding: 5px 10px;
+    // border: 1px solid #565656;
+    &:hover{
+      background: lighten(#000, 80%);
+    }
+  }
+}
+.input-image-icon{
+  height: 30px;
+  position: relative;
+  border-radius: 10px;
+  .image-select{
+    position: absolute;
+      left: 3%;
+      top: 15%;
+    @media(min-width: 750px){
+      left: 25%;
+    }
+    --color-txt:#565656;
+    i{
+      font-size: 20px;
+    }
+  }
+  .file-img{
+    opacity: 0;
+    width: 100%;
+  }
+  &:hover{
+    background: lighten(#000, 80%);
+  }
+}
+.list-separate-30px{
+  margin: 15px 0;
+}
+

@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*colors*/
+:root{/*root: todo el documento html*/
+	/*variable css*/
+}
+.error{
+	--color-panel:				var(--error);
+}
+.message{
+	--color-panel:				rgb(0, 73, 116);
+}
+.view{
+	--color:					rgba(6, 131, 180, 0.856);
+}
+.star{
+	--color:					#FFD118;
+}
+.setting{
+	--color:					#777777;
+}
+.remove{
+	--color:					#f00000;
+}
+.edit{
+	--color:					#3084e4;
+}
+.active{
+	--state:					#009123;
+}
+.txt-first{
+	--color-txt:				var(--color-first);
+}
+.txt-inactive{
+	--color-txt:					#212322;	
+}
+.inactive{
+	--state:					#212322;
+	--color-txt:				#fff;
+}
+.other{
+	--color:					#62615F;
+}
+.txt-white{
+	--color-txt:				#fff;
+	--color-tittle: 			#fff;
+}
+.txt-black{
+	--color-txt:				#000000;
+	--color-tittle: 			#000000;
+}
+.color-first{
+	--color:					var(--color-first);
+	--color-txt:				#fff;
+	/* --color-txt-invert:			var(--color-first); */
+}
+.btn-first{
+	--color-btn: 				var(--color-first);
+	--color-txt:				#fff;
+}
+.btn-reset{
+	--color-btn:				#FF6E6E;
+	--color-txt:				#fff;
+}
+
+
+/* social */
+.messenger,.MESSENGER {
+	--color:					#0087FF;
+}
+.facebook, .FACEBOOK{
+	--color:					#1877F2;
+}
+.pinterest,.PINTEREST{
+	--color:					#c8232c;
+}
+.twitter,.TWITTER{
+	--color:					#00acee;
+}
+.whatsapp,.WHATSAPP{
+	--color:					#25D366;
+}
+.instagram, .INSTAGRAM{
+	--color: #bc1888;
+}
+/* ****** */
+.gradient-g-y{
+	--gradient: #CAC531;  /* fallback for old browsers */
+	--gradient: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+	--gradient: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-c-y{
+	--gradient: #43C6AC;  /* fallback for old browsers */
+	--gradient: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	--gradient: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-b-w{
+	--gradient: #2193b0;  /* fallback for old browsers */
+	--gradient: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+	--gradient: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-p-w{
+	--gradient: #ee9ca7;  /* fallback for old browsers */
+	--gradient: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+	--gradient: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* Variables para background */
+
+.bck-black-time{
+	--bck: url(../img/bck/bck-black.png);
+}
+.bck-clock{
+	--bck: url(../img/bck/clock.jpg);
+}
+.bck-black-time-2{
+	--bck: url(../img/bck/bck-black-2.png);
+}
+.bck-t-first{
+    --bck: url(../img/bck/rayas.png);
+}
+.bck-t-green{
+    --bck: url(../img/bck/raya-verde.png);
+}
+
+/*Se redifine el contenido de la variable al elemento y sus nodos hijos que se le aplique esta clase*/
+
+
+
+/* fonts */
+@font-face{
+	font-family: Montserrat-Bold;
+	/* font-style: normal; */
+	font-weight: 400;
+	src: url(../font/Montserrat-Bold.ttf);
+}
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+.Montserrat-Bold{
+	--font-txt:"Montserrat-Bold";
+}
+.font-p-h{
+	--font-txt: 'Patrick Hand', cursive;
+}
+.font-i-f{
+	font-family: 'Indie Flower', cursive;
+}
+.font-barriecito{
+	font-family: 'Barriecito', cursive;
+}
+.font-berkshire{
+	font-family: 'Berkshire Swash', cursive;
+}
+
+
+.block{
+	display: block;
+}
+/*Text*/
+/*Título conestilo propio*/
+.tittle-sty-bck{
+	background: var(--bck);
+	background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Berkshire Swash', cursive;
+	padding: 40px 70px;
+    margin: 20px 0;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h1,h2,h3,h4,h5,h6,h1 span, h2 span, h3 span,span{
+	color: var(--color-tittle);
+}
+p,a,span,li,h1,h2,h3,h4,h5,h6,h1,li {
+	font-family: var(--font-txt);
+}
+.bold{
+	font-weight: bold;
+}
+p,a,i,span,li{
+	color: var(--color-txt);
+}
+.txt-dc-none{
+	text-decoration: none;
+}
+.txt-center{
+	text-align: center;
+}
+.txt-upper{
+	text-transform: uppercase;
+}
+.underline{
+	text-decoration: underline;
+}
+.txt-right{
+	text-align: right;
+}
+
+/*Elemento centrado*/
+.center-x{
+	margin: 0 auto;
+}
+.center-y{
+	margin: auto 0;
+}
+.center{
+	margin:  auto;
+}
+.right{
+	margin-left: auto;
+}
+/*Elemento no mostrado*/
+.hidden{
+    display: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/*estilo de lista: ninguno*/
+.l-s-none{
+	list-style: none;
+}
+/*Centado de elemento dentro de otro elemento*/
+.abs-center,.center-abs{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%) 
+}
+/*Elemento en la aprte superior*/
+.abs-top{
+	position: absolute;
+	top: 20px;
+}
+.abs-right{
+	position: absolute;
+	right: 20px;
+}
+.abs-bottom{
+	position: absolute;
+	bottom: 20px;
+}
+.abs-left{
+	position: absolute;
+	left: 20px;
+}
+.abs-top-0{
+	position: absolute;
+	top: 0;
+}
+.abs-right-0{
+	position: absolute;
+	right: 0;
+}
+.abs-bottom-0{
+	position: absolute;
+	bottom: 0;
+}
+.abs-left-0{
+	position: absolute;
+	left: 0;
+}
+/*Diseño flexible*/
+.flex{
+	display: flex;
+}
+.flex-y{
+	display: flex;
+	flex-flow: column;
+}
+.flex-d-y{
+	display: flex;
+	flex-direction: column;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.flex-center-x{
+	display: flex;
+	align-items: center;	
+}
+.flex-start{
+	display: flex;
+	justify-content: flex-start;
+}
+.flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.space-btw{
+	justify-content: space-between;
+}
+.space-around{
+	justify-content: space-around;
+}
+.space-evenly{
+	justify-content: space-evenly;
+}
+.relative{
+	position: relative;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: var(--color-first);
+  margin: 26px auto;
+}
+.m-t-100{
+	margin-top: 100px;
+}
+.m-t-80,.despliegue{
+	margin-top: 80px;
+}
+.m-20{
+	margin: 20px 0;
+}
+.c-pinter{
+	cursor: pointer;
+}
+
+
+
+.grid-center{
+	align-self: center;
+  	justify-self: center;
+}
+
+/**/
+.underline-a a{
+	text-decoration:  underline;
+}
+.txt-through{
+	text-decoration: line-through;
+}
+
