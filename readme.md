@@ -379,3 +379,10 @@ __
 
 * **Edward Reyes** - [edw-rys](https://github.com/edw-rys)
 ---
+## Screenshot Example
+
+![alt text](https://raw.githubusercontent.com/edw-rys/template_tnx/master/assets/images/screenshot/picture_1.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/template_tnx/master/assets/images/screenshot/picture_2.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/template_tnx/master/assets/images/screenshot/picture_3.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/template_tnx/master/assets/images/screenshot/picture_4.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/template_tnx/master/assets/images/screenshot/picture_5.png)
