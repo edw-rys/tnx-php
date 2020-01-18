@@ -20,7 +20,7 @@ define("BASEPATH", IS_LOCAL ? '/template_tnx/' : '___PRODUCTION___');
 define('AUTH_SALT'          ,'TNX_UPP_@S5249A6');
 
 // Puerto y URL
-define('PORT'               , "80");
+define('PORT'               , "81");
 define('URL'                , IS_LOCAL ?'http://127.0.0.1:'.PORT.BASEPATH :"__URL_PRODUCTION__");
 
 // Las rutas de directorios y archivos
@@ -63,7 +63,7 @@ define('LDB_ENGINE'         , 'mysql');
 define('LDB_HOST'           , 'localhost');
 define('LDB_NAME'           , 'products_test');
 define('LDB_USER'           , 'root');
-define('LDB_PASS'           , '');
+define('LDB_PASS'           , 'root');
 define('LDB_CHARSET'        , 'utf8');
 
 // Set para conexión en producción o servidor real
