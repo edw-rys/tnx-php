@@ -44,7 +44,7 @@ define('COMPONENTS'         , TEMPLATES.'components'.DS);
 define("HEADER"             , INCLUDES."header.php");
 define("FOOTER"             , INCLUDES."footer.php");
 define("PANELS"             , COMPONENTS."panels.php");
-define("NAVIGATION"         , COMPONENTS."navBar.php");
+define("NAVIGATION"         , COMPONENTS."navbar.php");
 
 // Rutas de archivos o assets con base URL
 define('ASSETS'             , URL.'assets/');
