@@ -1,8 +1,11 @@
-# Tnx Template
+# Tnx PHP
 
 _Plantilla de php enfocada en el modelo MVC:_
 ### MVC
 **Modelo: Se enfoca en la manipulación de los datos, conexión con el gestor de base de datos MYSQL.**
+## Autor ✒️
+
+* **TNX PHP** - [tnx-php.edwtnx.com](http://tnx-php.edwtnx.com/)
 
 **Controlador: Se encarga de comunicar la vista con el modelo.**
 
